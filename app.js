@@ -2,7 +2,7 @@
 
 // STEP 1
 // This is a standard function expression. You may also be familiar with function declarations, which begin with the "function" keyword.
-const theOldWay = function(course) {
+const theOldWay = course => {
   return `I am currently enrolled in ${course}`;
 };
 
@@ -44,7 +44,7 @@ console.log('As a one-liner:', oneLiner('Code 301'));
 // STEP 5
 // What if we have multiple parameters?
 // In a function expression, they all go in the parentheses
-const add = function(num1, num2) {
+const add = (num1,num2) => {
   return `${num1} + ${num2} = ${num1 + num2}`;
 };
 
@@ -76,7 +76,7 @@ console.log('Multi-line arrow function:', multiLiner('hello'));
 // STEP 8
 // The way an object is returned is different with an arrow function, too.
 // Here is how we return an object without arrow functions
-const oldObject = function(array) {
+const oldObject = array => {
   return {
     firstValue: array[0],
     secondValue: array[1],
@@ -108,7 +108,7 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 
 
 
-let sum = function(a, b, c, d) {
+let sum =(a, b, c, d)=> {
   return a + b + c + d;
 };
 
@@ -174,7 +174,7 @@ console.log(joe.greeting());
 
 
 
-Student.courseName = function() {
+Student.courseName =()=> {
   return 'This student is enrolled in Code 301.';
 };
 
